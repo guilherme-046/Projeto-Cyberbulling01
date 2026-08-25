@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CyberSafe — projeto educacional sobre cyberbullying, respeito e segurança digital.">
+  <meta name="theme-color" content="#07111f">
+  <title>CyberSafe — Conecte-se com respeito</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="page-glow glow-one" aria-hidden="true"></div>
+  <div class="page-glow glow-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio" aria-label="CyberSafe — início">
+      <span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>
+      <span><strong>CyberSafe</strong><small>Conecte-se com respeito.</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#o-que-e">O que é?</a>
+      <a href="#identificar">Como identificar</a>
+      <a href="#consequencias">Consequências</a>
+      <a href="#como-agir">Como agir</a>
+      <a href="#prevencao">Prevenção</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#ajuda">Ajuda</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i class="fa-solid fa-wifi"></i> Segurança e cidadania digital</span>
+          <h1>Cyberbullying: quando a internet <span>deixa de ser um lugar seguro.</span></h1>
+          <p class="hero-text">Informação, respeito e atitude podem transformar a forma como convivemos no mundo digital.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#o-que-e">Entender o problema <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-ghost" href="#quiz"><i class="fa-solid fa-circle-question"></i> Fazer o quiz</a>
+          </div>
+          <div class="hero-note"><span class="pulse-dot"></span> Por trás de uma tela também existe uma pessoa.</div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Ilustração de segurança digital">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="device">
+            <div class="device-top"><span></span><span></span><span></span></div>
+            <div class="device-screen">
+              <div class="screen-header"><i class="fa-solid fa-shield-halved"></i><span>CyberSafe</span><i class="fa-solid fa-ellipsis"></i></div>
+              <div class="chat-bubble bubble-left"><i class="fa-solid fa-lock"></i> Espaço seguro</div>
+              <div class="chat-bubble bubble-right">Respeito começa aqui <i class="fa-solid fa-heart"></i></div>
+              <div class="shield-core"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="security-line"><span></span><small>Proteção ativa</small></div>
+            </div>
+          </div>
+          <div class="float-card float-card-one"><i class="fa-solid fa-user-shield"></i><span>Proteção<br><b>online</b></span></div>
+          <div class="float-card float-card-two"><i class="fa-solid fa-comments"></i><span>Converse<br><b>com respeito</b></span></div>
+          <div class="tech-dot dot-1"></div><div class="tech-dot dot-2"></div><div class="tech-dot dot-3"></div>
+        </div>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div><strong data-counter="100">0</strong><span>%</span><p>das interações podem ser mais respeitosas</p></div>
+        <div><strong data-counter="24">0</strong><span>h</span><p>a internet pode amplificar uma situação rapidamente</p></div>
+        <div><strong data-counter="1">0</strong><span>atitude</span><p>pode começar uma mudança positiva</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="o-que-e">
+      <div class="section-heading reveal">
+        <span class="eyebrow">01 · Entenda</span>
+        <h2>O que é <span>Cyberbullying?</span></h2>
+        <p>É uma forma de agressão, humilhação, perseguição ou intimidação realizada por meios digitais. Pode acontecer em diferentes espaços da internet e afetar a sensação de segurança de quem passa por isso.</p>
+      </div>
+
+      <div class="definition-layout">
+        <div class="definition-card glass-card reveal">
+          <div class="big-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Onde pode acontecer?</h3>
+          <p>Redes sociais, aplicativos de mensagens, jogos online, fóruns, comentários, plataformas de vídeo e outros ambientes digitais.</p>
+          <button class="text-btn" data-modal="examplesModal">Ver exemplos <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+        <div class="icon-grid reveal">
+          <article class="mini-card"><i class="fa-solid fa-comment-dots"></i><h3>Mensagens ofensivas</h3><p>Comentários ou mensagens usadas para atacar ou constranger.</p></article>
+          <article class="mini-card"><i class="fa-solid fa-mobile-screen-button"></i><h3>Redes sociais</h3><p>Ações prejudiciais que acontecem em perfis, posts ou comentários.</p></article>
+          <article class="mini-card"><i class="fa-solid fa-gamepad"></i><h3>Jogos online</h3><p>Comportamentos agressivos em chats, partidas e comunidades.</p></article>
+          <article class="mini-card"><i class="fa-solid fa-image"></i><h3>Exposição indevida</h3><p>Divulgação de conteúdo ou informação sem consentimento.</p></article>
+          <article class="mini-card"><i class="fa-solid fa-user-slash"></i><h3>Exclusão digital</h3><p>Isolar alguém intencionalmente de espaços ou grupos digitais.</p></article>
+          <article class="mini-card"><i class="fa-solid fa-repeat"></i><h3>Compartilhamento para humilhar</h3><p>Espalhar conteúdo com a intenção de constranger alguém.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contrast-section" id="brincadeira">
+      <div class="section-heading reveal">
+        <span class="eyebrow">02 · Reflita</span>
+        <h2>“Era só uma <span>brincadeira...</span>”</h2>
+        <p>Uma brincadeira deixa de ser saudável quando causa sofrimento, humilhação, medo ou constrangimento. Respeitar limites é parte da convivência online.</p>
+      </div>
+      <div class="compare-grid reveal">
+        <article class="compare-card healthy">
+          <div class="compare-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <h3>Brincadeira saudável</h3>
+          <ul>
+            <li>Existe respeito</li><li>Todos conseguem se divertir</li><li>Ninguém é humilhado</li><li>É possível parar quando alguém pede</li>
+          </ul>
+        </article>
+        <div class="compare-vs">VS</div>
+        <article class="compare-card harmful">
+          <div class="compare-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <h3>Cyberbullying</h3>
+          <ul>
+            <li>Busca humilhar ou intimidar</li><li>Pode se espalhar rapidamente</li><li>Pode acontecer repetidamente</li><li>Pode causar sofrimento emocional</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="identificar">
+      <div class="section-heading reveal">
+        <span class="eyebrow">03 · Atenção</span>
+        <h2>Como identificar o <span>cyberbullying?</span></h2>
+        <p>Alguns comportamentos podem indicar que alguém está enfrentando dificuldades online. Eles não significam necessariamente cyberbullying: cada situação precisa ser observada com cuidado.</p>
+      </div>
+      <div class="signs-grid reveal">
+        <article class="sign-card"><span>01</span><i class="fa-solid fa-eye-slash"></i><h3>Evita redes</h3><p>Passa a evitar determinadas redes sociais ou espaços online.</p></article>
+        <article class="sign-card"><span>02</span><i class="fa-solid fa-mobile-screen"></i><h3>Preocupação</h3><p>Fica preocupado ou desconfortável depois de usar o celular.</p></article>
+        <article class="sign-card"><span>03</span><i class="fa-solid fa-user-group"></i><h3>Isolamento</h3><p>Afasta-se de amigos ou deixa de participar de atividades.</p></article>
+        <article class="sign-card"><span>04</span><i class="fa-solid fa-face-frown"></i><h3>Desconforto</h3><p>Demonstra medo ou incômodo relacionado a situações online.</p></article>
+        <article class="sign-card"><span>05</span><i class="fa-solid fa-arrows-rotate"></i><h3>Mudanças</h3><p>Muda repentinamente seus hábitos digitais.</p></article>
+        <article class="sign-card"><span>06</span><i class="fa-solid fa-hand"></i><h3>Pede ajuda</h3><p>Demonstra preocupação ou procura alguém para conversar.</p></article>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="tipos">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 · Conheça</span>
+        <h2>Tipos de <span>cyberbullying</span></h2>
+        <p>Clique nos cards para entender cada situação de forma simples e educativa.</p>
+      </div>
+      <div class="type-grid reveal" id="typeGrid"></div>
+    </section>
+
+    <section class="section impact-section" id="consequencias">
+      <div class="impact-content reveal">
+        <div class="section-heading left">
+          <span class="eyebrow">05 · Impacto</span>
+          <h2>O impacto pode ir muito <span>além da tela.</span></h2>
+          <p>Uma experiência negativa no ambiente digital pode afetar diferentes áreas da vida. Por isso, acolhimento e apoio são importantes.</p>
+        </div>
+        <div class="impact-wheel" aria-label="Áreas que podem ser afetadas">
+          <div class="impact-center"><i class="fa-solid fa-user-shield"></i><span>Vida<br>digital</span></div>
+          <div class="impact-item i1"><i class="fa-solid fa-brain"></i><span>Bem-estar<br>emocional</span></div>
+          <div class="impact-item i2"><i class="fa-solid fa-book-open"></i><span>Vida<br>escolar</span></div>
+          <div class="impact-item i3"><i class="fa-solid fa-people-group"></i><span>Relacionamentos</span></div>
+          <div class="impact-item i4"><i class="fa-solid fa-laptop"></i><span>Uso da<br>internet</span></div>
+          <div class="impact-item i5"><i class="fa-solid fa-heart"></i><span>Segurança e<br>autoestima</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="como-agir">
+      <div class="section-heading reveal">
+        <span class="eyebrow">06 · Ação</span>
+        <h2>Se acontecer com você, <span>o que fazer?</span></h2>
+        <p>Não é necessário enfrentar uma situação difícil sozinho. Estes passos podem ajudar a organizar uma resposta mais segura.</p>
+      </div>
+      <div class="timeline reveal">
+        <article class="timeline-item"><div class="timeline-number">01</div><div><h3>Não responda impulsivamente</h3><p>Evite entrar em discussões ou responder no calor do momento.</p></div></article>
+        <article class="timeline-item"><div class="timeline-number">02</div><div><h3>Guarde evidências</h3><p>Preserve mensagens, links ou registros relevantes para apresentar a alguém de confiança ou à plataforma.</p></div></article>
+        <article class="timeline-item"><div class="timeline-number">03</div><div><h3>Bloqueie e denuncie</h3><p>Use os recursos de bloqueio e denúncia disponíveis no aplicativo ou site.</p></div></article>
+        <article class="timeline-item"><div class="timeline-number">04</div><div><h3>Conte para alguém de confiança</h3><p>Procure um responsável, professor, orientador ou outra pessoa adulta de confiança.</p></div></article>
+        <article class="timeline-item"><div class="timeline-number">05</div><div><h3>Procure ajuda</h3><p>Se a situação continuar ou houver risco, busque apoio adequado de adultos e serviços responsáveis.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section friend-section" id="amigo">
+      <div class="section-heading reveal">
+        <span class="eyebrow">07 · Apoio</span>
+        <h2>Você pode <span>fazer a diferença.</span></h2>
+        <p>Quando alguém passa por uma situação difícil, uma atitude de apoio pode fazer muita diferença.</p>
+      </div>
+      <div class="friend-grid reveal">
+        <article><i class="fa-solid fa-heart"></i><h3>Escute sem julgar</h3><p>Dê espaço para a pessoa falar e leve o que ela sente a sério.</p></article>
+        <article><i class="fa-solid fa-handshake"></i><h3>Mostre que não está sozinha</h3><p>Presença e acolhimento podem ajudar a reduzir o sentimento de isolamento.</p></article>
+        <article><i class="fa-solid fa-shield-heart"></i><h3>Incentive a busca por ajuda</h3><p>Ajude a encontrar um adulto ou profissional de confiança.</p></article>
+        <article><i class="fa-solid fa-ban"></i><h3>Não compartilhe conteúdo ofensivo</h3><p>Não aumente o alcance de algo que pode prejudicar outra pessoa.</p></article>
+        <article><i class="fa-solid fa-person-chalkboard"></i><h3>Procure um adulto</h3><p>Quando necessário, envolva alguém responsável para ajudar na situação.</p></article>
+      </div>
+      <blockquote class="quote reveal">“Às vezes, ajudar começa simplesmente por ouvir.”</blockquote>
+    </section>
+
+    <section class="section" id="prevencao">
+      <div class="section-heading reveal">
+        <span class="eyebrow">08 · Prevenção</span>
+        <h2>Como construir uma internet <span>mais segura?</span></h2>
+      </div>
+      <div class="prevention-grid reveal">
+        <article><span>01</span><i class="fa-solid fa-lightbulb"></i><h3>Pense antes de publicar</h3><p>Considere como aquilo pode afetar você e outras pessoas.</p></article>
+        <article><span>02</span><i class="fa-solid fa-user-check"></i><h3>Respeite as pessoas</h3><p>Diferenças fazem parte da internet e da vida.</p></article>
+        <article><span>03</span><i class="fa-solid fa-share-nodes"></i><h3>Não espalhe humilhações</h3><p>Não compartilhe conteúdo criado para constranger alguém.</p></article>
+        <article><span>04</span><i class="fa-solid fa-key"></i><h3>Proteja informações pessoais</h3><p>Evite publicar dados que você não precisa tornar públicos.</p></article>
+        <article><span>05</span><i class="fa-solid fa-user-lock"></i><h3>Configure a privacidade</h3><p>Revise quem pode ver e interagir com seu conteúdo.</p></article>
+        <article><span>06</span><i class="fa-solid fa-flag"></i><h3>Denuncie abusos</h3><p>Use ferramentas oficiais das plataformas quando necessário.</p></article>
+        <article><span>07</span><i class="fa-solid fa-message"></i><h3>Comente com responsabilidade</h3><p>Antes de enviar, pense se você falaria aquilo pessoalmente.</p></article>
+        <article><span>08</span><i class="fa-solid fa-hands-holding-circle"></i><h3>Ajude quem precisa</h3><p>Não incentive ataques e procure apoio para quem está sendo alvo.</p></article>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="mitos">
+      <div class="section-heading reveal">
+        <span class="eyebrow">09 · Verdade ou mito?</span>
+        <h2>Quebre alguns <span>mitos.</span></h2>
+      </div>
+      <div class="myth-grid reveal">
+        <button class="myth-card" data-answer="Mito" data-explanation="Cyberbullying pode ocorrer em redes sociais, mensagens, jogos, fóruns, comentários e outros ambientes digitais.">
+          <span class="myth-label">MITO OU VERDADE?</span><p>“Cyberbullying só acontece nas redes sociais.”</p><strong>Revelar resposta <i class="fa-solid fa-chevron-down"></i></strong><div class="myth-answer"></div>
+        </button>
+        <button class="myth-card" data-answer="Verdade" data-explanation="Compartilhar pode ampliar o alcance de uma publicação ofensiva e contribuir para o problema, mesmo sem ter criado o conteúdo.">
+          <span class="myth-label">MITO OU VERDADE?</span><p>“Compartilhar uma publicação ofensiva também pode contribuir para o problema.”</p><strong>Revelar resposta <i class="fa-solid fa-chevron-down"></i></strong><div class="myth-answer"></div>
+        </button>
+        <button class="myth-card" data-answer="Mito" data-explanation="Apagar uma mensagem não significa que o impacto desapareceu. Por isso, quando necessário, é importante preservar evidências antes de apagar ou bloquear.">
+          <span class="myth-label">MITO OU VERDADE?</span><p>“Apagar uma mensagem significa que o problema desapareceu.”</p><strong>Revelar resposta <i class="fa-solid fa-chevron-down"></i></strong><div class="myth-answer"></div>
+        </button>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-heading reveal">
+        <span class="eyebrow">10 · Teste seus conhecimentos</span>
+        <h2>Quiz <span>CyberSafe</span></h2>
+        <p>Responda 10 perguntas para revisar boas práticas de segurança e cidadania digital.</p>
+      </div>
+      <div class="quiz-card reveal">
+        <div class="quiz-top"><span id="quizProgressText">Pergunta 1 de 10</span><div class="quiz-progress"><span id="quizProgressBar"></span></div><span id="quizScore">0 acertos</span></div>
+        <div id="quizContent"></div>
+        <div class="quiz-actions">
+          <button class="btn btn-primary" id="nextQuestion" disabled>Próxima <i class="fa-solid fa-arrow-right"></i></button>
+          <button class="btn btn-ghost hidden" id="restartQuiz"><i class="fa-solid fa-rotate-right"></i> Tentar novamente</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section simulator-section" id="simulador">
+      <div class="section-heading reveal">
+        <span class="eyebrow">11 · Na prática</span>
+        <h2>O que você <span>faria?</span></h2>
+        <p>Escolha uma atitude para cada situação hipotética e veja uma explicação educativa.</p>
+      </div>
+      <div class="simulator-card reveal">
+        <div class="scenario-progress"><span id="scenarioNumber">Situação 1 de 5</span><div><span id="scenarioBar"></span></div></div>
+        <h3 id="scenarioTitle"></h3>
+        <p id="scenarioText"></p>
+        <div class="scenario-options" id="scenarioOptions"></div>
+        <div class="scenario-feedback" id="scenarioFeedback"></div>
+        <button class="btn btn-ghost hidden" id="nextScenario">Próxima situação <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </section>
+
+    <section class="section help-section" id="ajuda">
+      <div class="help-panel reveal">
+        <div class="help-icon"><i class="fa-solid fa-life-ring"></i></div>
+        <div>
+          <span class="eyebrow">12 · Central de ajuda</span>
+          <h2>Precisa de <span>ajuda?</span></h2>
+          <p>Em situações de cyberbullying, procure pessoas de confiança. Você pode conversar com pais ou responsáveis, professores, coordenação escolar, orientadores ou outro adulto de confiança.</p>
+          <button class="btn btn-primary" data-modal="helpModal">Encontrar orientação <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-heading reveal">
+        <span class="eyebrow">13 · Dúvidas</span>
+        <h2>Perguntas <span>frequentes</span></h2>
+      </div>
+      <div class="faq-list reveal">
+        <details><summary>O que é cyberbullying? <i class="fa-solid fa-plus"></i></summary><p>É uma forma de agressão, humilhação, perseguição ou intimidação realizada por meios digitais.</p></details>
+        <details><summary>Cyberbullying é crime? <i class="fa-solid fa-plus"></i></summary><p>A resposta depende da conduta e da legislação aplicável. Algumas ações podem configurar crimes ou outras violações. Em uma situação concreta, procure orientação de um adulto responsável e, quando necessário, das autoridades competentes.</p></details>
+        <details><summary>O que devo fazer se receber mensagens ofensivas? <i class="fa-solid fa-plus"></i></summary><p>Evite responder impulsivamente, preserve registros relevantes, bloqueie ou denuncie quando apropriado e converse com uma pessoa de confiança.</p></details>
+        <details><summary>Devo responder à pessoa? <i class="fa-solid fa-plus"></i></summary><p>Não é necessário entrar em uma discussão. Priorize sua segurança e procure apoio.</p></details>
+        <details><summary>É importante guardar evidências? <i class="fa-solid fa-plus"></i></summary><p>Quando for seguro fazê-lo, registros como mensagens, links e informações da publicação podem ajudar a explicar o que aconteceu.</p></details>
+        <details><summary>Como denunciar uma conta? <i class="fa-solid fa-plus"></i></summary><p>Use o recurso de denúncia da própria plataforma e siga as instruções apresentadas por ela.</p></details>
+        <details><summary>Como ajudar um amigo? <i class="fa-solid fa-plus"></i></summary><p>Escute sem julgar, demonstre apoio, não compartilhe conteúdo ofensivo e incentive a procura por um adulto de confiança.</p></details>
+        <details><summary>Quando devo procurar um adulto? <i class="fa-solid fa-plus"></i></summary><p>Sempre que uma situação online causar medo, sofrimento, pressão ou parecer difícil de resolver sozinho. Procurar ajuda cedo é uma atitude de cuidado.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta section" id="voz">
+      <div class="final-visual" aria-hidden="true"><div class="final-ring"></div><i class="fa-solid fa-microphone-lines"></i></div>
+      <span class="eyebrow">14 · Uma mensagem importante</span>
+      <h2>Sua <span>voz importa.</span></h2>
+      <p>Se algo que acontece na internet está fazendo você se sentir inseguro ou desconfortável, conversar com alguém de confiança pode ser um primeiro passo.</p>
+      <a class="btn btn-primary" href="#inicio">Voltar ao início <i class="fa-solid fa-arrow-up"></i></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand" href="#inicio"><span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span><span><strong>CyberSafe</strong><small>Conecte-se com respeito.</small></span></a>
+      <p>Informação • Respeito • Segurança Digital</p>
+      <nav aria-label="Links do rodapé"><a href="#inicio">Início</a><a href="#o-que-e">O que é?</a><a href="#prevencao">Prevenção</a><a href="#quiz">Quiz</a><a href="#ajuda">Ajuda</a></nav>
+    </div>
+    <div class="footer-bottom"><span>Projeto educacional sobre segurança e cidadania digital.</span><span>© 2026 CyberSafe</span></div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="modal" id="examplesModal" role="dialog" aria-modal="true" aria-labelledby="examplesTitle" hidden>
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <span class="eyebrow">Exemplos educativos</span><h2 id="examplesTitle">Situações hipotéticas</h2>
+      <div class="modal-list">
+        <div><i class="fa-solid fa-message"></i><p>Uma pessoa recebe repetidamente comentários depreciativos em uma comunidade online.</p></div>
+        <div><i class="fa-solid fa-users-slash"></i><p>Um grupo digital exclui intencionalmente alguém e usa a exclusão para constranger a pessoa.</p></div>
+        <div><i class="fa-solid fa-share-nodes"></i><p>Uma imagem é compartilhada sem consentimento com o objetivo de expor ou humilhar.</p></div>
+      </div>
+      <p class="modal-note">Os exemplos são fictícios e não reproduzem conteúdo ofensivo real.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle" hidden>
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <span class="eyebrow">Orientação segura</span><h2 id="helpTitle">Comece por alguém de confiança</h2>
+      <p>Se você estiver passando por uma situação de cyberbullying, considere conversar com:</p>
+      <ul class="help-list"><li><i class="fa-solid fa-check"></i> Pais ou responsáveis</li><li><i class="fa-solid fa-check"></i> Professores ou coordenação escolar</li><li><i class="fa-solid fa-check"></i> Orientadores</li><li><i class="fa-solid fa-check"></i> Outro adulto em quem você confie</li></ul>
+      <div class="notice"><i class="fa-solid fa-circle-info"></i><p>Este site não substitui orientação profissional. Contatos e serviços oficiais podem mudar, então confirme informações diretamente em fontes oficiais e atualizadas.</p></div>
+    </div>
+  </div>
+
+  <div class="modal" id="typeModal" role="dialog" aria-modal="true" aria-labelledby="typeModalTitle" hidden>
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <span class="eyebrow" id="typeModalEyebrow">Categoria</span><h2 id="typeModalTitle"></h2><p id="typeModalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
